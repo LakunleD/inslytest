@@ -118,7 +118,7 @@
                         </tr>
                         
                         <tr>
-                            <th scope="row">Base Premium</th>
+                            <th scope="row">Base Premium (<?php echo $p1->getPolicy()*100  .'%)'; ?></th>
                             <td><?php echo sprintf("%.2f", $p1->getBasePremium()); ?></td>
                             <?php
                                 if($instalments > 1):
@@ -132,7 +132,7 @@
                         </tr>
                         
                         <tr>
-                            <th scope="row">Commission</th>
+                            <th scope="row">Commission (<?php echo $p1->getCommissionPercentage()*100  .'%)'; ?></th>
                             <td><?php echo sprintf("%.2f", $p1->getCommission()); ?></td>
                             <?php
                                 if($instalments > 1):
@@ -146,7 +146,7 @@
                         </tr>
 
                         <tr>
-                            <th scope="row">Tax</th>
+                            <th scope="row">Tax (<?php echo $taxPercentage .'%)'; ?></th>
                             <td><?php echo sprintf("%.2f", $p1->getTax()); ?></td>
                             <?php
                                 if($instalments > 1):
