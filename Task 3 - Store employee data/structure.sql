@@ -30,8 +30,8 @@ CREATE TABLE `employees` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-INSERT INTO `employees` (`id`, `name`, `birth_date`, `id_code`, `is_employee`, `email`, `phone`, `address`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(1, 'kunle', '2018-08-05', '001', 1, 'kunle@doc.com', '+12673367', '12 Jane Doe Avenue', 'dayo', '', '2018-11-24 12:56:37', '2018-11-24 12:56:37');
+INSERT INTO `employees` (`id`, `name`, `birth_date`, `id_code`, `is_employee`, `email`, `phone`, `address`, `introduction_en`, `work_experience_en`, `education_en`, `introduction_sp`, `work_experience_sp`, `education_sp`, `introduction_fr`, `work_experience_fr`, `education_fr`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
+(1, 'kunle', '2018-08-05', '001', 1, 'kunle@doc.com', '+12673367', '12 Jane Doe Avenue', 'introduction_en',  'work_experience_en', 'education_en', 'introduction_sp', 'work_experience_sp', 'education_sp', 'introduction_fr', 'work_experience_fr', 'education_fr', 'dayo', 'dayo', '2018-11-24 12:56:37', '2018-11-24 12:56:37');
 
 SELECT * FROM `employees` WHERE `id` = 1;
 
